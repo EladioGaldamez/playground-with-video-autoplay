@@ -5,11 +5,7 @@ Object.defineProperty(HTMLMediaElement.prototype, 'isPlaying', {
 })
 
 $(document).ready(function() {
-
   var video = document.getElementById("video");
-  if (video.isPlaying) {
-    video.play();
-  }
 
   video.addEventListener('click', function() {
     if (video.isPlaying) {
@@ -17,5 +13,14 @@ $(document).ready(function() {
     } else {
       video.play();
     }
+  });
+
+  document.querySelector("#kingsbred-main-video svg").addEventListener('click', function(event) {
+    event.stopImmediatePropagation();
+    event.stopPropagation();
+    event.preventDefault();
+    this.style.display = 'none';
+    video.muted = false;
+    video.play();
   });
 });

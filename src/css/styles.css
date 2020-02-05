@@ -13,7 +13,12 @@ body {
   justify-content: center;
 }
 
-video {
-  width: 90%;
-  height: auto;
+#kingsbred-main-video {
+  position: relative;
+}
+
+#kingsbred-main-video svg {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: calc(50% - 32px);
 }
