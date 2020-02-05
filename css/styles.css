@@ -1,1 +1,1 @@
-body,html{margin:0;padding:0;border:0;width:100vw;height:100vh}body{display:flex;align-items:center;justify-content:center}video{width:90%;height:auto}
+body,html{margin:0;padding:0;border:0;width:100vw;height:100vh}body{display:flex;align-items:center;justify-content:center}#kingsbred-main-video{position:relative}#kingsbred-main-video svg{position:absolute;top:calc(50% - 32px);left:calc(50% - 32px)}
