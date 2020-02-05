@@ -1,0 +1,30 @@
+{
+  "name": "playground-with-video-autoplay",
+  "version": "1.0.0",
+  "description": "This is a playground with videos",
+  "private": true,
+  "main": "scripts.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": {
+    "name": "José Galdámez",
+    "url": "https://github.com/EladioGaldamez"
+  },
+  "homepage": "https://eladiogaldamez.github.io/playground-with-video-autoplay",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gh-pages": "^2.2.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {}
+}
