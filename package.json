@@ -14,7 +14,7 @@
     "name": "José Galdámez",
     "url": "https://github.com/EladioGaldamez"
   },
-  "homepage": "https://eladiogaldamez.github.io/playground-with-video-autoplay",
+  "homepage": "https://eladiogaldamez.github.io/playground-with-video-autoplay/",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.7",
