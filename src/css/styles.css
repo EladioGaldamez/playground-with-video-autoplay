@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #kingsbred-main-video {
@@ -21,4 +22,175 @@ body {
   position: absolute;
   top: calc(50% - 32px);
   left: calc(50% - 32px);
+}
+
+.mailchimp-subscription {
+  width: 60%;
+}
+
+.mailchimp-subscription form {
+  display: flex;
+}
+.mailchimp-subscription form input {
+  height: 46px;
+  width: 100%;
+  padding: 0px 20px;
+  line-height: 40px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  box-shadow: none !important;
+  outline: none !important;
+  background: transparent;
+  border: 1px solid #eeeeee;
+  margin: 0 0 15px;
+  font-size: 13px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #5a5a5a;
+}
+
+.mailchimp-subscription form input::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.mailchimp-subscription form input:-moz-placeholder {
+  color: #aaa;
+}
+
+.mailchimp-subscription form input::-moz-placeholder {
+  color: #aaa;
+}
+
+.mailchimp-subscription form input:-ms-input-placeholder {
+  color: #aaa;
+}
+
+.mailchimp-subscription form button {
+  height: 46px;
+  text-transform: uppercase;
+  background-color: #4a4a4a;
+  font-weight: 700;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  flex: 0 0 auto;
+  margin-left: -1px;
+  width: auto;
+  padding: 0px 20px;
+  line-height: 40px;
+  border-radius: 0px;
+  box-sizing: border-box;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.mailchimp-success {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mailchimp-success.fade-in {
+  animation: fade-in .4s;
+  display: flex;
+}
+
+.mailchimp-success.fade-out {
+  animation: fade-out .4s;
+  display: none;
+}
+
+.mailchimp-success .success-dialog {
+  position: relative;
+  padding: 80px;
+  min-width: 30%;
+  background: #000000;
+  box-shadow: 0 2px 24px 0 rgba(0,0,0,0.50);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mailchimp-success .success-dialog svg {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.mailchimp-success .success-dialog img {
+  width: 160px;
+  height: auto;
+}
+
+.mailchimp-success .success-dialog p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 35px;
+  margin: 24px auto 0;
+}
+
+.mailchimp-success .success-dialog h3 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 32px;
+  text-transform: uppercase;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 992px) {
+  .mailchimp-success .success-dialog {
+    padding: 32px 16px;
+    width: 80%;
+  }
+
+  .mailchimp-success .success-dialog svg {
+    top: 8px;
+    right: 8px;
+  }
+
+  .mailchimp-success .success-dialog img {
+    width: 120px;
+    margin-top: 24px;
+  }
+
+  .mailchimp-success .success-dialog p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .mailchimp-success .success-dialog h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

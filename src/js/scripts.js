@@ -23,4 +23,13 @@ $(document).ready(function() {
     video.muted = false;
     video.play();
   });
+
+  document.querySelector(".success-dialog svg").addEventListener('click', function() {
+    document.querySelector(".mailchimp-success").classList.remove('fade-in');
+  });
+
+  document.getElementById("mailchimp-form").addEventListener('submit', function(event) {
+    event.preventDefault();
+    document.querySelector(".mailchimp-success").classList.add('fade-in');
+  })
 });
